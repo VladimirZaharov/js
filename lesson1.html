@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+
+<body>
+    <script>
+        // 1 task
+        "use strict"
+        let Tc = +prompt();
+        let Tf = (9 / 5) * Tc + 32;
+        alert(Tf)
+
+        // 2 task
+        let admin = null;
+        let name = null;
+        name = 'Василий';
+        admin = name;
+        console.log(admin);
+
+        // 3 task
+        // 10 + 10 + "10";
+        let result = 10 + 10 + "10";  //1.10+10=20 2.конкатенация 20 + "10" = "2010"
+        console.log(result);
+        // 10 + "10" + 10;
+        result = 10 + "10" + 10;  //1.конкатенация 10+"10" = "1010" 2.конкатенация "1010" + 10 = "101010"
+        console.log(result);
+        //10 + 10 + +"10"; 
+        result = 10 + 10 + +"10";  //1.10+10 = 20 2. 20 + 10(перед строкой унарный минус) = 30
+        console.log(result);
+        //10 / -"";
+        result = 10 / -"";  //1.унарный минус перед пустой строкой = -0 2. 10/-0 = -Infinity
+        console.log(result);
+        //10 / +"2,5"; 
+        result = 10 / +"2,5";  //2,5 не может быть переведена в числовое значение поскольку там ',' а не '.', а деление со строками не выполняется. Ответ NaN(не числовое значение)
+        console.log(result);
+    </script>
+</body>
