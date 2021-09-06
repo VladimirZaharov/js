@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+
+<body>
+    <script>
+        //пример 1 
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        alert(c); // ответ: 2
+        //a = 1; c = инкрементированная на 1 а
+
+        //пример 2 
+        d = b++;
+        alert(d); //ответ: 1
+        //b = 1; инкремент послеоперационный, значит d = b, но b стала равна 2
+
+
+        //пример 3 
+        c = 2 + ++a; alert(c); //ответ: 5 
+        //a инерементируеться второй раз, соответственно равна 3
+
+        //пример 4 
+        d = 2 + b++;
+        alert(d); //ответ: 4
+        //постоперационный инкремент b, она равна 3 после операции сложения с 2  
+        alert(a); //3 
+        //из примера 3 a осталась равна 3
+        alert(b); //3
+        //из начала 4 примера b инкрементирована до 3
+    </script>
+</body>
