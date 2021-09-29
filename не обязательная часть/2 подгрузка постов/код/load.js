@@ -32,7 +32,7 @@ function insertPosts() {
     // разметку, возвращаемую getPostMarkup.
     // 3.1 в getPostMarkup в качестве аргумента передавайте счетчик цикла
     let postsMarkup = `${getPostMarkup()}`;
-
+    scrollCheck.insertAdjacentHTML('beforebegin', postsMarkup)
     // 3.2 Перед scrollCheck вставьте записанную в postsMarkup разметку
 
 }
